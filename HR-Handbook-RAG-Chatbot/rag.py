@@ -1,6 +1,8 @@
 #Stage1: Loadinding the Handbook pdf
 
 from langchain_community.document_loaders import PyPDFLoader
+# Place the required PDF in this folder before running the application.
+# The original company handbook is not included in this repository.
 pdf_loader = PyPDFLoader("Saxon_Handbook 2.pdf")
 documents = pdf_loader.load()
 print(len(documents))
